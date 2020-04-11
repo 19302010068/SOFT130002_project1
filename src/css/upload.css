@@ -1,0 +1,26 @@
+[type="file"]
+{
+    display: none;
+}
+
+[type="text"]
+{
+    width: 300px;
+}
+
+textarea
+{
+    resize: both;
+    width: 623px;
+    height: 100px;
+}
+
+label:last-of-type>span
+{
+    display: block;
+}
+
+form>*:nth-child(n+2)
+{
+    display: none;
+}

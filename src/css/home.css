@@ -1,0 +1,39 @@
+#six-photos>article
+{
+    grid-template-rows: 100px 100px;
+}
+
+#six-photos p:first-of-type
+{
+    height: 1rem;
+    line-height: 1;
+}
+
+#six-photos p:last-of-type
+{
+    grid-column: 3;
+    grid-row: 2;
+    padding: 0;
+}
+
+aside
+{
+    float: right;
+    position: fixed;
+    bottom: 10vh;
+    right: 0;
+}
+
+aside>[type="image"], aside img
+{
+    display: block;
+    background-color: silver;
+    border-radius: 21px;
+    padding: 7px;
+}
+
+footer img
+{
+    height: 20px;
+    margin-right: 0.25rem;
+}

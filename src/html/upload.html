@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" href="../css/reset.css" media="all">
+    <link rel="stylesheet" href="../css/styles.css" media="all">
+    <link rel="stylesheet" href="../css/upload.css" media="all">
+    <script src="../js/scripts.js"></script>
+    <script src="../js/upload.js" onload="setup()"></script>
+</head>
+<body>
+<header>
+    <nav id="user">
+        <span>Me</span>
+        <ul>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="photos.html">My photos</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+            <li><a href="../../index.html">Login</a></li>
+        </ul>
+    </nav>
+    <h1>Share Your Travels</h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="search.html">Search</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Upload</h2>
+    <form method="post" action="photos.html">
+        <div>
+            <input type="file" accept="image/*" onchange="updateForm()" name="file">
+            <input class="action" type="button" value="Choose a photo" onclick="chooseImage()">
+        </div>
+        <img src="" alt="">
+        <hr>
+        <label>
+            <span>Title</span>
+            <input type="text" name="title">
+        </label>
+        <label>
+            <span>Country/Region</span>
+            <input type="text" name="country">
+        </label>
+        <label>
+            <span>City</span>
+            <input type="text" name="city">
+        </label>
+        <label>
+            <span>Description</span>
+            <textarea name="description"></textarea>
+        </label>
+        <div>
+            <span></span>
+            <input class="action" type="submit" value="Upload" onclick="speak()">
+        </div>
+    </form>
+    <div></div>
+</main>
+<footer>19302010068@fudan.edu.cn</footer>
+</body>
+</html>

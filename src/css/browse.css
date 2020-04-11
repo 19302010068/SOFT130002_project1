@@ -1,0 +1,112 @@
+/* layout */
+body>div
+{
+    display: flex;
+}
+
+main
+{
+    order: 2;
+}
+
+aside
+{
+    order: 1;
+    min-width: 15rem;
+    background-color: aliceblue;
+    border-right: solid 2px silver;
+    padding: 1.5rem 1rem;
+}
+
+/* aside */
+aside li
+{
+    list-style: disc;
+    margin: 1rem;
+}
+
+aside [type="button"]:not(.action)
+{
+    display: block;
+    margin: 0.25rem 0;
+}
+
+/* main */
+#browse
+{
+    margin-bottom: 2rem;
+}
+
+#browse>*
+{
+    display: block;
+}
+
+#browse>div
+{
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+#browse label:first-child>span
+{
+    display: inline-block;
+    width: 8rem;
+}
+
+#browse>div>label:nth-child(n+2)
+{
+    margin-left: 0.25rem;
+}
+
+#browse select
+{
+    width: 100px;
+}
+
+[name^="city"]
+{
+    display: none;
+}
+
+[name="city-any"]
+{
+    display: inline-block;
+}
+
+/* images alignment */
+.portrait img
+{
+    margin-top: -33px;
+}
+
+#result>div:nth-of-type(2) img,
+#result>div:nth-of-type(8) img,
+#result>div:nth-of-type(11) img,
+#result>div:nth-of-type(12) img,
+#result>div:nth-of-type(13) img,
+#result>div:nth-of-type(15) img,
+#result>div:last-of-type img
+{
+    margin-left: -33px;
+}
+
+#result>div:nth-of-type(3) img
+{
+    margin-left: -44px;
+}
+
+#result>div:nth-of-type(5) img
+{
+    margin-left: -50px;
+}
+
+#result>div:nth-of-type(6) img,
+#result>div:nth-of-type(10) img
+{
+    margin-left: -78px;
+}
+
+#result>div:nth-of-type(9) img
+{
+    margin-left: -52px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse</title>
+    <link rel="stylesheet" href="../css/reset.css" media="all">
+    <link rel="stylesheet" href="../css/styles.css" media="all">
+    <link rel="stylesheet" href="../css/browse.css" media="all">
+    <script src="../js/scripts.js"></script>
+    <script src="../js/browse.js"></script>
+</head>
+<body>
+<header>
+    <nav id="user">
+        <span>Me</span>
+        <ul>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="photos.html">My photos</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+            <li><a href="../../index.html">Login</a></li>
+        </ul>
+    </nav>
+    <h1>Share Your Travels</h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><strong>Browse</strong></li>
+            <li><a href="search.html">Search</a></li>
+        </ul>
+    </nav>
+</header>
+<div>
+    <main>
+        <section id="browse">
+            <label>
+                <span>Content</span>
+                <select name="content">
+                    <option>Any</option>
+                    <option>Building</option>
+                    <option>Scenery</option>
+                    <option>Historical</option>
+                    <option>Contemporary</option>
+                </select>
+            </label>
+            <div>
+                <label name="country">
+                    <span>Country/Region</span>
+                    <select onchange="updateCities()">
+                        <option>Any</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                        <option>Italy</option>
+                        <option>US</option>
+                    </select>
+                </label>
+                <label name="city-any">
+                    <span>City</span>
+                    <select>
+                        <option>Any</option>
+                        <option>Shanghai</option>
+                        <option>Kunming</option>
+                        <option>Beijing</option>
+                        <option>Yantai</option>
+                        <option>Tokyo</option>
+                        <option>Osaka</option>
+                        <option>Kamakura</option>
+                        <option>Roma</option>
+                        <option>Milan</option>
+                        <option>Venice</option>
+                        <option>Florence</option>
+                        <option>New York</option>
+                        <option>San Francisco</option>
+                        <option>Washington</option>
+                    </select>
+                </label>
+                <label name="city-china">
+                    <span>City</span>
+                    <select>
+                        <option>Any</option>
+                        <option>Shanghai</option>
+                        <option>Kunming</option>
+                        <option>Beijing</option>
+                        <option>Yantai</option>
+                    </select>
+                </label>
+                <label name="city-japan">
+                    <span>City</span>
+                    <select>
+                        <option>Any</option>
+                        <option>Tokyo</option>
+                        <option>Osaka</option>
+                        <option>Kamakura</option>
+                    </select>
+                </label>
+                <label name="city-italy">
+                    <span>City</span>
+                    <select>
+                        <option>Any</option>
+                        <option>Roma</option>
+                        <option>Milan</option>
+                        <option>Venice</option>
+                        <option>Florence</option>
+                    </select>
+                </label>
+                <label name="city-us">
+                    <span>City</span>
+                    <select>
+                        <option>Any</option>
+                        <option>New York</option>
+                        <option>San Francisco</option>
+                        <option>Washington</option>
+                    </select>
+                </label>
+            </div>
+            <input class="action" type="button" value="Filter" onclick="speak()">
+        </section>
+        <hr>
+        <section id="result">
+            <div class="portrait"><a href="9498388516.html"><img src="../../img/medium/222222.jpg" alt="222222"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/222223.jpg" alt="222223"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5855174537.jpg" alt="5855174537"></a></div>
+            <div class="portrait"><a href="9498388516.html"><img src="../../img/medium/5855191275.jpg" alt="5855191275"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5855209453.jpg" alt="5855209453"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5855213165.jpg" alt="5855213165"></a></div>
+            <div class="portrait"><a href="9498388516.html"><img src="../../img/medium/5855221959.jpg" alt="5855221959"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5855729828.jpg" alt="5855729828"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5855735700.jpg" alt="5855735700"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5855752464.jpg" alt="5855752464"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5855774224.jpg" alt="5855774224"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5856616479.jpg" alt="5856616479"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5856654945.jpg" alt="5856654945"></a></div>
+            <div class="portrait"><a href="9498388516.html"><img src="../../img/medium/5856658791.jpg" alt="5856658791"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5856697109.jpg" alt="5856697109"></a></div>
+            <div class="landscape"><a href="9498388516.html"><img src="../../img/medium/5857298322.jpg" alt="5857298322"></a></div>
+            <nav id="pages">
+                <input type="button" value="&ll;" onclick="page(1)">
+                <input type="button" value="1" onclick="page(1)">
+                <input type="button" value="2" onclick="page(2)">
+                <input type="button" value="3" onclick="page(3)">
+                <input type="button" value="4" onclick="page(4)">
+                <input type="button" value="5" onclick="page(5)">
+                <input type="button" value="&gg;" onclick="page(5)">
+            </nav>
+        </section>
+    </main>
+    <aside>
+        <span>Filter by ...</span>
+        <ul>
+            <li>
+                <label>
+                    <span>Title</span><br>
+                    <input type="text" name="title">
+                </label>
+                <input class="action" type="button" value="Filter" onclick="speak()">
+            </li>
+            <li>
+                <span>Popular content</span>
+                <input type="button" value="Building" onclick="speak()">
+                <input type="button" value="Nature" onclick="speak()">
+                <input type="button" value="Historical" onclick="speak()">
+                <input type="button" value="Contemporary" onclick="speak()">
+            </li>
+            <li>
+                <span>Popular countries/regions</span>
+                <input type="button" value="China" onclick="speak()">
+                <input type="button" value="Japan" onclick="speak()">
+                <input type="button" value="Italy" onclick="speak()">
+                <input type="button" value="US" onclick="speak()">
+            </li>
+            <li>
+                <span>Popular cities</span>
+                <input type="button" value="Shanghai" onclick="speak()">
+                <input type="button" value="Tokyo" onclick="speak()">
+                <input type="button" value="Roma" onclick="speak()">
+                <input type="button" value="New York" onclick="speak()">
+            </li>
+        </ul>
+    </aside>
+</div>
+<footer>19302010068@fudan.edu.cn</footer>
+</body>
+</html>

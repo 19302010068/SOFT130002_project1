@@ -1,0 +1,19 @@
+#search
+{
+    margin-bottom: 2rem;
+}
+
+#search>div:last-of-type
+{
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+#search>div>div
+{
+    display: inline-block;
+}
+
+#search>div>div:first-child
+{
+    width: 6rem;
+}
